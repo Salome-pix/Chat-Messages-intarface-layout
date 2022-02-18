@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides dynamicTypePreference="3"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20017"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mesenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-9c-v9i">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjA-lV-iwM">
+                                <rect key="frame" x="64" y="828" width="278" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dc-vu-fvx">
+                                <rect key="frame" x="350" y="821" width="59" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icons8-paper-plane-35"/>
+                                <connections>
+                                    <action selector="sendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9R9-WU-f6E"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sbp-3U-ae9">
+                                <rect key="frame" x="0.0" y="111" width="414" height="702"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sbp-3U-ae9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="074-1d-dOH"/>
+                            <constraint firstItem="3Dc-vu-fvx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="777" id="6m8-u1-qpa"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nlv-hY-hGH"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OXE-pd-m0g"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QR1-dc-MsA"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="bottom" secondItem="LjA-lV-iwM" secondAttribute="bottom" id="U03-oV-N3R"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="769" id="mkr-pq-Orx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LjA-lV-iwM" secondAttribute="trailing" constant="72" id="pjc-3u-S82"/>
+                            <constraint firstItem="GCc-9c-v9i" firstAttribute="top" secondItem="sbp-3U-ae9" secondAttribute="bottom" id="pjj-sX-QT3"/>
+                            <constraint firstAttribute="bottom" secondItem="3Dc-vu-fvx" secondAttribute="bottom" constant="26" id="q4h-Un-LnG"/>
+                            <constraint firstItem="sbp-3U-ae9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="qve-nY-JkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Dc-vu-fvx" secondAttribute="trailing" constant="5" id="sW8-P4-rw4"/>
+                            <constraint firstItem="LjA-lV-iwM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="wuP-7F-GDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sbp-3U-ae9" secondAttribute="trailing" id="ygb-FP-PZ8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageField" destination="LjA-lV-iwM" id="cf7-JI-0WP"/>
+                        <outlet property="tableView" destination="sbp-3U-ae9" id="miD-54-0pY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-paper-plane-35" width="35" height="35"/>
+    </resources>
+</document>
